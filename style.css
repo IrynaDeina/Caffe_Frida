@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: white;
+    font-family: 'Alegreya Sans',sans-serif;
+    font-size: 15px;
+    color: #333;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+header {
+    position: relative;
+    display: block;
+    padding: 50px 20px;
+    height: 100%;
+    text-align: center;
+    background-color: #d3a467;
+}
+
+.flowers-topleft, 
+.flowers-bottomleft, 
+.flowers-bottomright,
+.flowers-topright {
+    position: fixed;
+    /* z-index: 10; */
+    height: 60%;
+    width: 50%
+
+}
+.flowers-topleft {
+    top: -60px;
+    left: -5px;
+} 
+
+.flowers-bottomleft {
+    bottom: -60px;
+    left: -5px;
+} 
+
+.flowers-bottomright {
+    bottom: -60px;
+    right: -5px;
+}
+
+.flowers-topright {
+    top: -60px;
+    right: -5px;
+}
+
+.button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border: none;
+}
+
+.logo {
+    position: fixed;
+    width: 14%;
+    top: 40%;
+    left: 43%;
+    text-align: center;
+}
+
+.button span {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 3px;
+    width: 30px;
+    height: 3px;
+    background: black;
+}
+
+/*
+.menu_button li {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    font-weight: 800;
+    text-align: center;
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+}
+*/
+
+#la_formule {
+    position: relative;
+    height: 200%;
+    width: 100%;
+    background-color: #dedccc;
+}
+
+.row_left,
+.row_right {
+    width: 50%;
+    height: 100%;
+}
+
+.row_left {
+    float: left;
+    background-color: #d8d4be;
+}
+
+.row_right{
+    float: right;
+    text-align: center;
+    padding: 180px 100px 50px 100px;
+}
+
+.toast {
+    background: url(images/toast-gif.gif) no-repeat center center;
+    width: 100%;
+    height: 90%;
+    background-size: cover;
+}
+
+#la_formule h2 {
+    position: absolute;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    color: #395442;
+    letter-spacing: 3px;
+    left: -15px;
+    top: 50%;
+    margin-top: -10px;
+    transform: rotate(-90deg);
+}
+
+#la_formule h1 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    display: block;
+    font-weight: 800;
+    margin-top: 150px;
+    margin-left: 130px;
+    padding-bottom: 30px;
+}
+
+#la_formule h1 span {
+    font-size: 26px;
+}
+
+#la_formule h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #ac9377;
+    margin-bottom: 25px;
+}
+
+#la_formule p {
+    font-weight: 400;
+    color: #ac9377;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+#la_formule .text_left {
+    margin-left: 150px;
+    margin-right: 220px;    
+}
+
+div.background {
+    position: relative;
+    height: 460px;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+    background-size: 110%;
+}
+
+div.one {
+    background-image: url(images/ambiance-8.jpg);
+}
+
+div.two {
+    background-image: url(images/ambiance-9.jpg);
+}
+
+div.three {
+    background-image: url(images/ambiance-11.jpg);
+}
+
+#main_menu,
+#lidee,
+#la_formula,
+#frida,
+#contact {
+    padding: 70px 0 120px 0;
+    display: table;
+    position: relative;
+    width: 100%;
+    background-color: #f5e8bf;
+}
+
+#lidee {
+    background-color: white;
+}
+
+#frida {
+    background-color: #e3e1d2;
+}
+
+#contact {
+    background-color: #395442;
+}
+div.container {
+    margin-right: 110px;
+    margin-left: 110px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#main_menu .food_4 {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: -150px;
+    z-index: 5;
+}
+
+#main_menu .food_4::after {
+    content: '';
+    position: absolute;
+    background: #b49879;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#main_menu .food_4 img,
+#main_menu .food_3 img,
+#lidee .food_1 img,
+#lidee .verti_3 img,
+#frida .food_7 img,
+#frida .verti_4 img {
+    width: 100%;
+}
+
+#main_menu .food_3 {
+    position: absolute;
+    width: 35%;
+    left: 400px;
+    top: -45px;
+    z-index: 5;
+}
+
+#main_menu .food_3::after {
+    content: '';
+    position: absolute;
+    background: #394e40;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#main_menu h2,
+#lidee h2,
+#frida h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 180px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 15px;
+    z-index: 6;
+}
+
+.menu_text {
+    margin-top: 50px;
+    width: 37%;
+}
+
+.main_menu {
+    position: absolute;
+    display: block;
+    background: white;
+    left: 0;
+    top: 460px;
+    float: left;
+    z-index: 50;
+}
+
+.main_menu ul {
+    margin: 0;
+    margin-left: 70px;
+    margin-right: 40px;
+    padding: 0;
+    padding-top: 12px;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.main_menu li {
+    display: inline-block;
+    padding-left: 45px;
+    font-size: 1.5em;
+}
+
+.main_menu li::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #333;
+    transform: translateY(14px) rotate(45deg);
+    transition-duration: .5s;
+    margin: auto;
+        }
+
+.main_menu li:hover::after{
+    transform: translateY(3px) rotate(45deg);
+        }
+
+.main_menu li a {
+    text-decoration: none;
+    color: #395442;
+    text-transform: uppercase;
+}
+
+#main_menu div.container .row {
+    margin-top: 120px;
+    padding-top: 50px;
+    color: #395442;
+}
+
+#main_menu div.row .box {
+    position: relative;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+#main_menu div.row h3 {
+    margin: 15px 0 30px 0;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+}
+
+#main_menu div.row h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+#main_menu div.row ul {
+    list-style: none;
+    margin-bottom: 80px;
+    padding-left: 15px;
+}
+
+#main_menu div.row ul li {
+    padding: 15px 0;
+}
+
+#main_menu div.row ul p {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#main_menu div.row span {
+    font-weight: 500;
+}
+
+#lidee .food_1 {
+    position: absolute;
+    width: 46%;
+    right: 0;
+    top: -250px;
+    z-index: 5;
+}
+
+#lidee .food_1::after {
+    content: '';
+    position: absolute;
+    background: #f2e3b4;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#lidee .verti_3 {
+    position: absolute;
+    width: 28%;
+    right: 69px;
+    top: -560px;
+    z-index: 5;
+}
+
+#lidee .verti_3::after {
+    content: '';
+    position: absolute;
+    background: #394e40;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#lidee h2, 
+#frida h2 {
+    color: #395442;
+}
+
+#lidee .row,
+#frida .row {
+    width: 50%;
+    padding: 0 15px;
+}
+
+#lidee .box2 {
+    width: 50%;
+}
+
+#lidee .box p,
+#lidee .box2 p,
+#frida .box p {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+#lidee div.button,
+#frida div.button {
+    clear: both;
+    height: 40px;
+    border: 2px solid #395442; 
+    position: relative;
+    margin: 30px 0 70px 0;
+    overflow: hidden;
+}
+
+#lidee div.button {
+    width: 230px;
+}
+
+#frida div.button {
+    width: 330px;
+}
+
+#lidee div.button a, 
+#frida div.button a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #395442;
+    z-index: 10;
+}
+
+#lidee div.button a::before,
+#frida div.button a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 8px 0;
+    color: #f2e3b4;
+    background: #395442;
+    transition-duration: .5s;
+}
+
+#lidee div.button a::before {
+    content: "Visitez notre page Facebook";
+    transform: translateX(-230px);
+}
+
+#frida div.button a::before {
+    content: "Visitez le Dep Frida sur Facebook";
+    transform: translateX(-330px);
+}
+        
+#lidee div.button a:hover::before,
+#frida div.button a:hover::before {
+    transform: translateX(0);
+}
+
+#lidee .row2,
+#contact .row2 {
+    width: 50%;
+}
+
+#lidee h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ac9377;
+}
+
+#lidee .box2,
+#contact .box2 {
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+#lidee .box2 a {
+    text-decoration: none;
+    color: #395442;
+    font-weight: 600;
+}
+
+#lidee .box2 a:active {
+    color: #ac9377;
+}
+
+#frida .food_7 {
+    position: absolute;
+    width: 48%;
+    left: 0;
+    top: -250px;
+    z-index: 5;
+}
+
+#frida .food_7::after {
+    content: '';
+    position: absolute;
+    background: #f2e3b4;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#frida .verti_4 {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 69px;
+    top: -560px;
+    z-index: 5;
+}
+
+#frida .verti_4::after {
+    content: '';
+    position: absolute;
+    background: #394e40;
+    width: 100%;
+    height: 99%;
+    top: 10px;
+    left: -10px;
+    z-index: -1;
+}
+
+#frida h2 {
+    float: right;
+}
+
+#frida .row {
+    float: right;
+    clear: both;
+    overflow: hidden;
+}
+
+#contact {
+    color: #f2e3b4;
+    line-height: 1.8;
+}
+#contact img {
+    width: 11%;
+}
+
+#contact .row2 {
+    margin-top: 20px;
+}
+
+#contact p {
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #f2e3b4;
+    text-decoration: none;
+}
+
+#contact a.tel {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#contact i {
+    font-size: 28px;
+    background: #f2e3b4;
+    color: #395442;
+    text-align: center;
+    height: 34px;
+    width: 34px;
+    border-radius: 1px;
+    margin-top: 15px;
+    margin-left: 2px;
+    padding: 8px 0 0 7px;
+}
+
+#contact i:hover {
+    background-color: white;
+}
+
+#contact iframe {
+    position: absolute;
+    width: 30%;
+    float: right;
+    width: 30%;
+    height: 100%;
+    right: 100px;
+    top: -80px;
+    float: right;
+    z-index: 5;
+}
+
+#contact .map::after {
+    content: '';
+    background: #b49879;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 110px;
+    top: -70px;
+    float: right;
+    z-index: 4;
+}
